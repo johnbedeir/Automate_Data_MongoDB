@@ -20,11 +20,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install pymongo
+        python3 -m pip3 install --upgrade pip
+        pip3 install pymongo
 
     - name: Run script
-      run: python mongodb_connection.py
+      run: python3 mongodb_connection.py
       env:
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
