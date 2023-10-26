@@ -24,7 +24,7 @@ jobs:
         pip install pymongo
 
     - name: Run script
-      run: python your_script_name.py
+      run: python mongodb_connection.py
       env:
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
